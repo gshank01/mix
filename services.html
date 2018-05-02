@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Mix Construction</title>
+
+
+    <link rel="stylesheet" type="text/css" href="reset.css">     
+    <link href="style.css" rel=stylesheet type=text/css>  
+    <link href="sticky.css" rel=stylesheet type=text/css>
+    <link href="photobox.css" rel=stylesheet type=text/css>
+
+    <!--FAVICON REQUIRED!    -->
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div id="head">
+        <img src="mix_co.jpg" id="logo" alt="Mix Construction Co" style="padding-left:15px;">
+
+        <span id="quote">
+            <p>Call us anytime at 919-464-6642.   </p>
+            <br>
+            <p>  "With Mix you can always count on timely and professional service." <br><br>-Rosa, business owner</p>
+        </span>
+    </div>
+
+    <ul class="navigation header" id="myHeader">  <!-- Will be sticky -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <!--            <li><a href="#">Results</a></li>  SHOULD BE A SUB BENEATH SERVICES?-->
+        <li><a href="#">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>  
+
+
+    <h3>Patios</h3>   
+
+    <div class="patios">    
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="patio_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="patio_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="patio_1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="patio_2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="patio_1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="patio_2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="patio_1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="patio_2.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="patio_1.jpg" onclick="currentSlide(1)" alt="Nature">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="patio_2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="patio_1.jpg" onclick="currentSlide(3)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="patio_2.jpg" onclick="currentSlide(4)" alt="Lights">
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+<h3>Driveways</h3>   
+        <div class="driveways">    
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="patio_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="patio_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="patio_1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="patio_2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="patio_1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="patio_2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="patio_1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="patio_2.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="patio_1.jpg" onclick="currentSlide(1)" alt="Concrete-stamped patio with bronze wash">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="patio_2.jpg" onclick="currentSlide(2)" alt="Concrete-stamped patio with greywash">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="patio_1.jpg" onclick="currentSlide(3)" alt="Concrete-stamped patio with bronze wash">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="patio_2.jpg" onclick="currentSlide(4)" alt="Concrete-stamped patio with greywash">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <script>
+
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+        //LIGHTBOX  
+
+        // Open the Modal
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }    
+
+
+    </script>   
+
+</body>

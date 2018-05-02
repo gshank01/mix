@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+
+    
+    <title>Mix Construction</title>
+
+    
+<link rel="stylesheet" type="text/css" href="reset.css">         
+    <link href="style.css" rel=stylesheet type=text/css>
+    <link href="sticky.css" rel=stylesheet type=text/css> 
+   
+    <meta charset="utf-8">
+</head>
+
+<body>
+    
+<div id="head">
+    <img src="mix_co.jpg" id="logo" alt="Mix Construction Co" style="padding-left:15px;">
+    
+    <span id="quote">
+        <p>Call us anytime at 919-464-6642.   </p>
+        <br>
+        <p>  "With Mix you can always count on timely and professional service." <br><br>-Rosa, business owner</p>
+    </span>
+</div>
+    
+        <ul class="navigation header" id="myHeader">  <!-- Will be sticky -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+<!--            <li><a href="#">Results</a></li>  SHOULD BE A SUB BENEATH SERVICES?-->
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>    
+
+<div class="page content">  
+     <h1 class="mytitle">Concrete Work in the Willow Springs area</h1>
+    
+    <div id="info">
+        <br>
+        <p>Upgrade your home or business with our services ranging from new driveways, patios and gutters to curbs, garages and slabs.</p>
+        <br>
+        <h4>Contact us at 919-464-6642 for a free quote.</h4>
+        
+    </div>
+
+    
+    <div class="parallax" style="background-image:url(patio_1.jpg)"></div>
+    <div id="description" >Here is an example of a patio laid at Adam's Point Community Pool.</div>
+    <br>
+    
+    <div id="info">
+    
+    <h1>What we do:</h1>
+        <a>Here at Mix Construction we offer a range of services shown on <a href="#">this</a> page.</a>
+        <br><br>
+        <a>Please contact us anytime for a free quote!</a>
+    
+    </div>
+    
+    <br>
+    <div class="parallax" style="background-image:url(patio_2.jpg)"></div>
+    
+    <div id="description">Here is another example of a beautiful patio finished back in April.</div>
+    
+    <div id="info">
+        
+        <h1>Who are we:</h1>
+        <a>Mix Construction Co is a concrete specialty company that works out of Willow Springs, North Carolina.</a>
+        <br><br>
+        <a>Mix Construction was founded in 2008 by Rosa Lopez Gomez. Since then, the company has finished over 200 projects at homes and businesses in the area.</a>
+        <br><br>
+        <a>Mix Construction gained its name from the Mixteco language that Rosa speaks in her family from Oaxaca Mexico.</a>
+    
+    
+    </div>
+    
+    <div id="info"> To contact us, please click <a href="contact.html">here</a>.</div>
+</div>  
+    
+    
+    
+    <script>
+    // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}</script>
+    
+    </body>

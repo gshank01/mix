@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+<title>Mix Construction</title>
+
+    
+<link rel="stylesheet" type="text/css" href="reset.css">     
+<link href="style.css" rel=stylesheet type=text/css>  
+        <link href="sticky.css" rel=stylesheet type=text/css>
+    
+<!--FAVICON REQUIRED!    -->
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+<div id="head">
+    <img src="mix_co.jpg" id="logo" alt="Mix Construction Co" style="padding-left:15px;">
+    
+    <span id="quote">
+        <p>Call us anytime at 919-464-6642.   </p>
+        <br>
+        <p>  "With Mix you can always count on timely and professional service." <br><br>-Rosa, business owner</p>
+    </span>
+</div>
+    
+        <ul class="navigation header" id="myHeader">  <!-- Will be sticky -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+<!--            <li><a href="#">Results</a></li>  SHOULD BE A SUB BENEATH SERVICES?-->
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>  
+
+    <div class="page content"> 
+        <div id="pricing-info">
+    <h4>Since I cannot rightfully gain access to the company's stance on pricing, here are a few iframe windows of their facebook posts.</h4>   
+    <br>
+        <h4>If you would like to see more of any of these posts, simply clock on them and you will be redirected to the facebook page.</h4>
+        </div>
+    
+    
+<!--    side-lot of concrete with two lobes-->
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1565681843666750%2Fphotos%2Fa.1583779218523679.1073741829.1565681843666750%2F2095082380726691%2F%3Ftype%3D3&width=500" width="500" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  
+<!--    wishing everyone a beautiful day post-->
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D2112385282329734%26id%3D1565681843666750&width=500" width="500" height="626" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    
+<!--    Video of beautifully shaped driveway -->    
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1565681843666750%2Fvideos%2F2112364975665098%2F&show_text=1&width=267" width="267" height="709" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+    
+<!--    sand-blasted patio-->
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D2112109942357268%26id%3D1565681843666750&width=500" width="500" height="676" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    
+<!--    finished patio-->
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D2111488635752732%26id%3D1565681843666750&width=500" width="500" height="626" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    
+        
+        
+        
+    </div>    
+        
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}</script>   
+       
+</body>
