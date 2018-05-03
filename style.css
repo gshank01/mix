@@ -22,7 +22,7 @@ img {
 }
 
 .content{
-    max-width:600px;
+    max-width:800px;
     display: block;
     margin:auto;
     text-align: center;
@@ -106,10 +106,6 @@ h4 {
     font-weight: lighter;
 }
 
-.positions{
-    background-color:darkgrey;
-}
-
 .contact{
     margin:20px;
 }
@@ -132,16 +128,11 @@ h4 {
 }
 
 iframe{
-    margin-left:auto;
-    margin-right:auto;
-    flex:center;
-    display: block;
-    padding:15px;
-    width:500px;
+    margin:auto;
+    display:block;    
 }
 
 #pricing-info{
-    width:550px;
     margin:auto;
 }
 
@@ -269,9 +260,6 @@ input[type=submit]:hover {
 }
 
 @media all and (min-width: 800px){
-    .container{
-        
-    }
     .contact{
         margin:40px;
     }
@@ -279,5 +267,12 @@ input[type=submit]:hover {
         display:flex;
         float:right;
     }
+}
+
+@media all and (max-width:600px){
+    .content{
+        background:none;
+    }
+
 }
     
