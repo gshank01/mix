@@ -141,7 +141,9 @@ iframe{
     text-decoration-line: underline;
 }
 
-
+#space {
+    /*This is nothing for now because we don't need it until later*/
+}
 
 .navigation {
     list-style: none;
@@ -225,6 +227,19 @@ input[type=submit]:hover {
 }
     
 
+/* KEYFRAME ANIMATION, responsive */
+.truck {
+    animation-name: fly;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+
+@keyframes fly{
+    from{transform: translateX(700px)}
+    to{transform: translateX(-700px)}
+}
+
 
 /*    MEDIA QUERIES   */
 
@@ -234,7 +249,7 @@ input[type=submit]:hover {
     justify-content: flex-end;
     }
     #logo {
-        max-height: 150px;
+        max-height:150px;
         background-color: white;
         margin-left:15px;
         margin-bottom: 3px;
@@ -254,6 +269,7 @@ input[type=submit]:hover {
     }
     #head p{
         max-width: 400px;
+        float:right;
     }
     .page{
 /*        display:inline-block;*/
@@ -266,15 +282,41 @@ input[type=submit]:hover {
     .contact{
         margin:40px;
     }
+    #space{
+        width:200px;
+    }
     #quote{
-        display:flex;
+        display:contents;
         float:right;
+    }
+    .truck{
+        animation-duration: 6s;
+    }
+        @keyframes fly{
+        from{transform: translateX(1000px)}
+        to{transform: translateX(-1000px)}
+    }
+}
+
+@media all and (min-width:1000px){
+    #space{
+        width:400px;
+    }
+    .truck{
+        animation-duration: 8s;
+    }
+    @keyframes fly{
+        from{transform: translateX(1300px)}
+        to{transform: translateX(-1300px)}
     }
 }
 
 @media all and (max-width:600px){
     .content{
         background:none;
+    }
+    .truck{
+        animation-duration:0s;
     }
 
 }
