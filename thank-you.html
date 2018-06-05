@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+<title>Mix Construction</title>
+
+    
+<link rel="stylesheet" type="text/css" href="reset.css">     
+<link href="style.css" rel=stylesheet type=text/css>  
+        <link href="sticky.css" rel=stylesheet type=text/css>
+    
+<!--FAVICON REQUIRED!    -->
+    <link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico">
+    
+    
+    <meta charset="utf-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+</head>
+
+<body>
+
+<div id="head">
+    <a href=index.html><img src="mix_co.jpg" id="logo" alt="Mix Construction Co" style="padding-left:15px;"></a>
+    
+    <span id="space"></span>
+    <span id="quote">
+        <p>Call us anytime at <span style="white-space:nowrap;">919-464-6642.</span>   </p>
+        <br>
+        <p>  "With Mix you can always count on timely and professional service." <br><br>-Rosa, business owner</p>
+    </span>
+</div>
+    
+        <ul class="navigation header" id="myHeader">  <!-- Will be sticky -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+<!--            <li><a href="#">Results</a></li>  SHOULD BE A SUB BENEATH SERVICES?-->
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>  
+ <div class="page content">  
+    <h2 class="contact">Thank you for your submission. Someone will get back to you at their earliest convenience. Feel free to contact us via phone if you do not hear back.</h2>
+    
+<!--Making that contact us form -->    
+    
+
+    
+        
+    <div id="positions"   class="contact">
+    <h2>Interested in working with us? Here is a list of positions currently available.</h2>
+        <ul>
+        <li>No positions available at this time.</li>
+        </ul>
+        </div>
+<!--         <img class="truck" src="truck_blue.png" style="padding-bottom: 10px;">-->
+        <img src="truck_blue.png" style="padding-bottom: 20px;">
+        
+     <p>Website created by: <a href="gshank01.github.io">Grace</a></p>
+    
+</div>     
+
+    
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}</script>   
+       
+</body>
